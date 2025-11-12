@@ -1,4 +1,4 @@
-# NEP Training for γ-Ga2O3
+# NEP Training for gamma-Ga2O3
 
 This directory contains all input and output files for the neuroevolution potential (NEP) training of gamma-Ga2O3.
 
