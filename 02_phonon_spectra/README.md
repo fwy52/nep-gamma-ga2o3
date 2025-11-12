@@ -6,7 +6,6 @@ This directory contains all input and output files for phonon spectra calculatio
 
 - **Phonon dispersion data** - omega2.out, x_omega.dat, y_omega.dat are data files related to phonon spectra
 - **Input files** - kpoints.in, basis.in, run.in, and model.xyz are input files for phonon calculations
-- **Visualization files** - Data files for generating phonon spectrum plots
 
 ## Calculation Methods
 
