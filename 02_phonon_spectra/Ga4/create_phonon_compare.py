@@ -3,12 +3,12 @@ import numpy as np
 from pylab import *
 from ase.io import read,write
 
-cx,cy,cz = 6, 6, 2 # 超胞参数
-npoints = 600          # vaspkit305的npoints点数
+cx,cy,cz = 6, 6, 2 
+npoints = 600        
 special_points = {'G': [0, 0, 0], 'X': [0, 0.5, 0],'M': [0.5, 0.5, 0], 'G': [0, 0, 0], 'R': [0.5, 0.5, 0.5],'X': [0, 0.5, 0],'M': [0.5, 0.5, 0],'R': [0.5, 0.5, 0.5]}  # 高对称点坐标，同样vaspkit305提供的文件里有
-points_path = 'GXMGRXMR'         # 点路径，最后还要设置横坐标的标签gca().set_xticklabels([])
+points_path = 'GXMGRXMR'      
 
-uc = read('POSCAR-unitcell') #xyz、cif文件也可以
+uc = read('POSCAR-unitcell') 
 struc = uc * (cx,cy,cz)
 write("model.xyz", struc)
 
@@ -55,22 +55,21 @@ for sym_point in sym_points[1:-1]:
 gca().set_xticks(sym_points)
 gca().set_xticklabels([r'$\Gamma$', 'X', 'M', r'$\Gamma$', 'R', 'X', 'M', 'R'])
 
-# ============ 修改的 y 轴部分 ============
-# 设置主刻度和次刻度
+
 from matplotlib.ticker import MultipleLocator
 
-# 主刻度：每 3 THz
+
 plt.gca().yaxis.set_major_locator(MultipleLocator(3))
-# 次刻度：每 1 THz
+
 plt.gca().yaxis.set_minor_locator(MultipleLocator(1))
 
-# 设置 y 轴范围（包含负值示例，根据实际数据调整）
-plt.ylim(0, 27)  # 假设需要显示负频率（如 -3 到 27）
 
-# 统一刻度线样式
-plt.tick_params(axis='y', which='major', length=6, width=1, colors='k')  # 主刻度线
-plt.tick_params(axis='y', which='minor', length=3, width=0.8, colors='k')  # 次刻度线
-# =======================================
+plt.ylim(0, 27)  
+
+
+plt.tick_params(axis='y', which='major', length=6, width=1, colors='k') 
+plt.tick_params(axis='y', which='minor', length=3, width=0.8, colors='k')  
+
 
 ylabel(r'$\nu$ (THz)', fontsize=15)
 '''
