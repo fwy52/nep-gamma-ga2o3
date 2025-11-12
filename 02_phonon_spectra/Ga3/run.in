@@ -1,0 +1,2 @@
+potential       nep.txt
+compute_phonon  17 0.01 # in units of A
