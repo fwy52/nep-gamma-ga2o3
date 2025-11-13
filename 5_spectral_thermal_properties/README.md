@@ -10,4 +10,4 @@ The scripts used for spectral thermal conductivity and phonon mean free path cal
 
 ## Results Analysis
 
-By analyzing the spectral thermal conductivity and phonon mean free path distributions across different sites (Ga2/Ga3/Ga4) and crystallographic directions, we can gain deep insights into the contribution of phonons to thermal transport and their scale effects in γ-Ga2O3.
+By analyzing the spectral thermal conductivity and phonon mean free path distributions across different sites (Ga2/Ga3/Ga4) and crystallographic directions, we can gain deep insights into the contribution of phonons to thermal transport and their scale effects in gamma-Ga2O3.
