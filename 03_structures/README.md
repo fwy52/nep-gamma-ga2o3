@@ -10,6 +10,6 @@ This directory contains all structural files related to gamma-Ga2O3, including s
 - **`Ga2O3_113_1211.xyz`** - Structure with Ga2 site
 
 **Structures optimized from the above configurations**
-- **`Ga2`** - Structural configuration files for Ga2 site
-- **`Ga3`** - Structural configuration files for Ga3 site
-- **`Ga4`** - Structural configuration files for Ga4 site
+- **`Ga2.vasp`** - Structural configuration files for Ga2 site
+- **`Ga3.vasp`** - Structural configuration files for Ga3 site
+- **`Ga4.vasp`** - Structural configuration files for Ga4 site
