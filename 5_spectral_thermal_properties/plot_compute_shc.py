@@ -9,8 +9,8 @@ struc = uc* (cx, cy, cz)
 struc.set_pbc([True, True, True])
 l = struc.cell.lengths()
 
-dic = 'x' #这里修改分组方向
-group_cycl = [1,1,1,1,1,1] #每组的周期数
+dic = 'x' 
+group_cycl = [1,1,1,1,1,1] 
 ucl = uc.cell[0][0] if dic == 'x' else uc.cell[1][1] if dic == 'y' else uc.cell[2][2]
 natoms = len(uc)*cy*cz if dic == 'x' else len(uc)*cx*cz if dic == 'y' else len(uc)*cy*cx
 def split_group(input_list, ucl):
